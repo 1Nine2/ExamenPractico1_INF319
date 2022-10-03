@@ -1,0 +1,43 @@
+
+
+
+module Test where
+
+division :: Int -> Int -> Int
+division :: x y = x 'div' y
+
+suma :: Int -> Int ->Int
+suma :: x y = x + y
+
+resta :: Int -> Int ->Int
+resta :: x y = x - y
+
+multi :: Int -> Int -> Int
+multi :: x y = x * y
+
+
+main = do 
+   let var1 = 2 
+   let var2 = 3 
+   putStrLn "La adicion es :" 
+   print(var1 + var2) 
+
+
+main = do 
+   let var1 = 10 
+   let var2 = 6 
+   putStrLn "La resta es:" 
+   print(var1 - var2)
+
+main = do 
+   let var1 = 2 
+   let var2 = 3 
+   putStrLn "La multiplicacion es:" 
+   print(var1 * var2)
+
+
+main = do 
+   let var1 = 12 
+   let var2 = 3 
+   putStrLn "La disvision es :" 
+   print(var1/var2)
