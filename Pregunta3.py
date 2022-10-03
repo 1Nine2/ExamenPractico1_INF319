@@ -1,0 +1,26 @@
+from pyswip import Prolog
+prolog = Prolog()
+prolog.assertz("female(pam)")
+prolog.assertz("female(liz)")
+prolog.assertz("female(pat)")
+prolog.assertz("female(ann)")
+prolog.assertz("male(jim)")
+prolog.assertz("male(bob)")
+prolog.assertz("male(tom)")
+prolog.assertz("male(peter)")
+prolog.assertz("parent(pam,bob)")
+prolog.assertz("parent(tom,bob)")
+prolog.assertz("parent(tom,liz)")
+prolog.assertz("parent(bob,ann)")
+prolog.assertz("parent(bob,pat)")
+prolog.assertz("parent(pat,jim)")
+prolog.assertz("parent(bob,peter)")
+prolog.assertz("parent(peter,jim)")
+prolog.assertz("mother(X,Y):- parent(X,Y),female(X)")
+prolog.assertz("father(X,Y):- parent(X,Y),male(X)")
+prolog.assertz("haschild(X):- parent(X,_)")
+prolog.assertz("sister(X,Y):- parent(Z,X),parent(Z,Y),female(X),X\==Y")
+prolog.assertz("brother(X,Y):-parent(Z,X),parent(Z,Y),male(X),X\==Y")
+X = pat ? ;
+
+X = peter
