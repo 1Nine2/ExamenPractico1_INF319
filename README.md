@@ -12,3 +12,14 @@ Plot a Colores
 
 ![RplotColor](https://user-images.githubusercontent.com/70820314/193479624-a8908b5e-9e48-4a96-a040-e03a39e33f6c.png)
 
+
+
+
+
+Funcionamiento de Calculadora
+
+
+
+
+https://youtu.be/okbnZJ-k60k
+
